@@ -4,13 +4,14 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
+import { PostProvider } from "./Context";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <PostProvider>
     <Router>
       <App />
     </Router>
-  </React.StrictMode>,
+  </PostProvider>,
   document.getElementById("root")
 );
 

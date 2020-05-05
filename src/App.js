@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/singlepost" component={SinglePost} />
+        <Route exact path="/posts/:slug" component={SinglePost} />
         <Route component={NotFound} />
       </Switch>
     </>

@@ -1,11 +1,10 @@
 import React from "react";
-import PostList from "../components/PostList";
+import PostContainer from "../components/PostContainer";
 
 const Home = () => {
   return (
     <>
-      <h1>Peter's Blog</h1>
-      <PostList />
+      <PostContainer />
     </>
   );
 };

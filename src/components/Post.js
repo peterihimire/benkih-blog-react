@@ -1,14 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
+// import Button from '../components/Button';
 
-const Post = () => {
+const Post = ({ post }) => {
+  console.log(post);
+  const { title, image, slug, description, author, date } = post;
+  console.log(post);
   return (
-    <div>
-      <img src="" alt="post-img" />
+    <article className="post-card">
+      <img src={image} alt="post-img" className="post-image" />
       <div>
-        <small></small>
-        <p>This is the discription I was talking about </p>
+        <div className="post-title">
+          <h2>{title}</h2>
+          <small>
+            {`by ${author}`}/{` ${date}`}
+          </small>
+        </div>
+
+        <div>
+          <p>{description}</p>
+        </div>
+        <div className="post-link">
+          <Link to={`/posts/${slug}`} className="btn">
+            Read More
+          </Link>
+        </div>
       </div>
-    </div>
+    </article>
   );
 };
 

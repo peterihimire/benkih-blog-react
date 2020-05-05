@@ -9,7 +9,7 @@ export default [
     sys: {
       id: "1"
     },
-    title: "My love for programming",
+    title: "javaScript programming, pros and cons",
     slug: "programming",
     image: {
       fields: {
@@ -19,8 +19,8 @@ export default [
       }
     },
     description:
-      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it. ",
-    author: "peter ihimire",
+      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to. ",
+    author: "joseph ihimire",
     date: "2nd Dec 2020",
     body:
       "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."
@@ -39,8 +39,8 @@ export default [
       }
     },
     description:
-      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it. ",
-    author: "peter ihimire",
+      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to. ",
+    author: "beatrice ihimire",
     date: "19th Aug 2020",
     body:
       "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray."
@@ -59,7 +59,7 @@ export default [
       }
     },
     description:
-      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it. ",
+      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to. ",
     author: "peter ihimire",
     date: "7th Jan 2022",
     body:
@@ -79,7 +79,7 @@ export default [
       }
     },
     description:
-      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it. ",
+      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it where i want to share my journey to. ",
     author: "peter ihimire",
     date: "3rd Oct 2020",
     body:
@@ -89,7 +89,7 @@ export default [
     sys: {
       id: "5"
     },
-    title: "why macbook pro is the best laptop for web developer",
+    title: "mac, the best unix device for development",
     slug: "macbook-pro",
     image: {
       fields: {
@@ -99,7 +99,7 @@ export default [
       }
     },
     description:
-      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it. where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it ",
+      "This is where i want to share my journey to becomming a world class programmer and software engineer. I hope you enjoy it. where i want to share my journey to. ",
     author: "peter ihimire",
     date: "23rd Dec 2019",
     body:
