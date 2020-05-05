@@ -12,8 +12,10 @@ const PostContainer = () => {
   console.log(posts);
   return (
     <section className="post-container">
-      <Title title="peter ihimire" subtitle="personal blog" />
-      <PostList />
+      <div className="post-container-center">
+        <Title title="peter ihimire" subtitle="personal blog" />
+        <PostList />
+      </div>
     </section>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import Button from '../components/Button';
+import { readableDate } from "../components/helpers";
 
 const Post = ({ post }) => {
   console.log(post);
@@ -13,7 +14,7 @@ const Post = ({ post }) => {
         <div className="post-title">
           <h2>{title}</h2>
           <small>
-            {`by ${author}`}/{` ${date}`}
+            {`by ${author}`}/{` ${readableDate(date)}`}
           </small>
         </div>
 

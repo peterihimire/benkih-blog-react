@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
-import SinglePost from "./pages/SinglePost";
+import MainBlog from "./pages/MainBlog";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import { Route, Switch } from "react-router-dom";
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/posts/:slug" component={SinglePost} />
+        <Route exact path="/posts/:slug" component={MainBlog} />
         <Route component={NotFound} />
       </Switch>
     </>

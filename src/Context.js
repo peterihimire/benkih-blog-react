@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import items from "./data";
+// import items from "./data";
+import Client from "./Contentful";
+
+Client.getEntries({
+  content_type: "portfolioBlog"
+}).then(response => console.log(response.items));
 
 const PostContext = React.createContext();
 
@@ -9,17 +14,34 @@ class PostProvider extends Component {
     sortedPosts: [],
     loading: true
   };
-
+  //getData
+  getData = async () => {
+    try {
+      let response = await Client.getEntries({
+        content_type: "portfolioBlog",
+        order: "sys.createdAt"
+      });
+      let posts = this.formatData(response.items);
+      this.setState({
+        posts,
+        sortedPosts: posts,
+        loading: false
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
   componentDidMount() {
-    let posts = this.formatData(items);
-    console.log(posts);
-    this.setState({ posts, loading: false, sortedPosts: posts });
+    // let posts = this.formatData(items);
+    // console.log(posts);
+    this.getData();
+    // this.setState({ posts, loading: false, sortedPosts: posts });
   }
   formatData(items) {
     let tempItems = items.map(item => {
       let id = item.sys.id;
-      let image = item.image.fields.file.url;
-      let post = { ...item, id, image };
+      let image = item.fields.image.fields.file.url;
+      let post = { ...item.fields, id, image };
       console.log(post);
       return post;
     });
