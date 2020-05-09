@@ -1,9 +1,9 @@
 import React from "react";
-import Title from "../components/Title";
 import { withPostConsumer } from "../Context";
 import PostList from "../components/PostList";
 import { useContext } from "react";
 import { PostContext } from "../Context";
+import Title from "../components/Title";
 
 const PostContainer = () => {
   const context = useContext(PostContext);
@@ -13,7 +13,7 @@ const PostContainer = () => {
   return (
     <section className="post-container">
       <div className="post-container-center">
-        <Title title="peter ihimire" subtitle="personal blog" />
+        <Title title="all post" />
         <PostList />
       </div>
     </section>

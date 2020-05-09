@@ -51,7 +51,7 @@ body {
   margin-bottom: 5rem;
 }
 .section-title h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
@@ -66,7 +66,15 @@ body {
   height: 0.5rem;
   margin: 0 auto;
   background: var(--primaryColor);
-  display: none;
+  /* display: none; */
+}
+
+@media screen and (min-width: 768px) {
+  .section-title h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
 }
 /* end of title */
 
@@ -86,8 +94,9 @@ body {
   text-align: center;
   padding: 0.5rem 0 0 0;
 }
-.post-title h2 {
+.post-title h3 {
   text-transform: capitalize;
+  font-size: 1.8rem;
 }
 .post-title small {
   text-transform: capitalize;
@@ -100,7 +109,7 @@ body {
 .btn {
   display: flex;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem;
   background: transparent;
   margin: auto;
   border: solid 0.2rem var(--mainBlack);
@@ -115,6 +124,23 @@ body {
     box-shadow: 0 0 1rem 0 rgba(29, 28, 28, 0.849);
     padding: 1rem;
     background: var(--mainWhite);
+  }
+
+  .post-title h3 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: transparent;
+    margin: auto;
+    border: solid 0.2rem var(--mainBlack);
+    text-decoration: none;
+    color: var(--mainBlack);
+    text-align: center;
+    width: 50%;
   }
 }
 /* end of post */
@@ -159,7 +185,7 @@ body {
 }
 .single-post-title h1 {
   text-transform: capitalize;
-  font-size: 3rem;
+  font-size: 1.8rem;
   padding: 0 0 1rem 0;
   letter-spacing: 0.2rem;
 }
@@ -174,7 +200,7 @@ body {
 }
 .single-post-btn {
   border: solid 2px var(--mainBlack);
-  padding: 0.5rem;
+  padding: 0.2rem;
   text-decoration: none;
   color: var(--mainBlack);
   text-transform: capitalize;
@@ -187,6 +213,12 @@ body {
   padding: 1rem 0 0 0;
 }
 @media screen and (min-width: 768px) {
+  .single-post-title h1 {
+    text-transform: capitalize;
+    font-size: 3rem;
+    padding: 0 0 1rem 0;
+    letter-spacing: 0.2rem;
+  }
   .single-post-hero {
     min-height: calc(60vh - 50px);
   }
@@ -205,5 +237,80 @@ body {
     /* width: 100%;
     height: 100%; */
   }
+
+  .single-post-btn {
+    border: solid 2px var(--mainBlack);
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--mainBlack);
+    text-transform: capitalize;
+  }
 }
 /* end of single post */
+
+/* hero */
+.hero {
+  min-height: calc(60vh - 50px);
+  background: linear-gradient(
+      to right,
+      rgba(12, 12, 12, 0.699),
+      rgba(54, 130, 170, 0.699)
+    ),
+    url("./images/blog-header.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.hero-center {
+  padding: 0 2rem;
+}
+/* end of hero */
+
+/* banner */
+.banner {
+  color: var(--mainWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.banner h1 {
+  font-size: var(--largeFont);
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+.banner p {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.post-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem 4rem;
+  text-decoration: none;
+  border: 3px solid var(--mainWhite);
+  color: var(--mainWhite);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  background: none;
+  transition: all linear 1s;
+}
+.post-btn:hover {
+  cursor: pointer;
+  border: solid 0.3rem var(--mainWhite);
+  background: var(--primaryColor);
+  transition: all linear 1s;
+}
+/* end of banner */

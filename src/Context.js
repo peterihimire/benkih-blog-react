@@ -6,6 +6,10 @@ Client.getEntries({
   content_type: "portfolioBlog"
 }).then(response => console.log(response.items));
 
+Client.getEntries({
+  content_type: "portfolioProjects"
+}).then(response => console.log(response.items));
+
 const PostContext = React.createContext();
 
 class PostProvider extends Component {
@@ -31,6 +35,7 @@ class PostProvider extends Component {
       console.log(error);
     }
   };
+
   componentDidMount() {
     // let posts = this.formatData(items);
     // console.log(posts);
@@ -41,7 +46,8 @@ class PostProvider extends Component {
     let tempItems = items.map(item => {
       let id = item.sys.id;
       let image = item.fields.image.fields.file.url;
-      let post = { ...item.fields, id, image };
+      let description = item.fields.blog.slice(0, 130) + "...";
+      let post = { ...item.fields, id, image, description };
       console.log(post);
       return post;
     });

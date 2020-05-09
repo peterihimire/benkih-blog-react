@@ -5,11 +5,13 @@ import MainBlog from "./pages/MainBlog";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import { Route, Switch } from "react-router-dom";
+import RenderTop from "./components/RenderTop";
 
 function App() {
   return (
     <>
       <Navbar />
+      <RenderTop />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/posts/:slug" component={MainBlog} />
