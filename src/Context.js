@@ -16,7 +16,8 @@ class PostProvider extends Component {
   state = {
     posts: [],
     sortedPosts: [],
-    loading: true
+    loading: true,
+    isFixed: false
   };
   //getData
   getData = async () => {
@@ -39,9 +40,25 @@ class PostProvider extends Component {
   componentDidMount() {
     // let posts = this.formatData(items);
     // console.log(posts);
+    document.addEventListener("scroll", () => {
+      this.toggleVisibility();
+    });
     this.getData();
     // this.setState({ posts, loading: false, sortedPosts: posts });
   }
+  toggleVisibility = () => {
+    let position = window.pageYOffset;
+    console.log(position);
+    if (position >= 118.75) {
+      this.setState({
+        isFixed: true
+      });
+    } else {
+      this.setState({
+        isFixed: false
+      });
+    }
+  };
   formatData(items) {
     let tempItems = items.map(item => {
       let id = item.sys.id;

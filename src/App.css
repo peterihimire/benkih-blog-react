@@ -21,7 +21,7 @@
 
 /* globals */
 body {
-  padding: 68.75px 0 0 0;
+  /* padding: 68.75px 0 0 0; */
   font-family: Arial, Helvetica, sans-serif;
   background: var(--mainGrey);
   overflow-x: hidden;
@@ -33,15 +33,26 @@ body {
 
 /* navbar */
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: sticky;
+  /* top: 0;
+  left: 0; */
   width: 100%;
-  padding: 2rem 2rem;
-  background: var(--mainWhite);
-  box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849);
+  padding: 3rem 2rem 2.7rem 2rem;
+  /* background: var(--mainWhite);
+  box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849); */
   z-index: 1;
   border-top: 1px solid var(--primaryColor);
+}
+
+.navbar-fixed {
+  position: fixed;
+  background: var(--mainWhite);
+  box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849);
+  padding: 0.1rem 2rem 2rem 2rem;
+}
+.navbar-header {
+  display: flex;
+  flex-direction: column;
 }
 /* end of navbar */
 
@@ -250,7 +261,7 @@ body {
 
 /* hero */
 .hero {
-  min-height: calc(60vh - 50px);
+  min-height: calc(70vh - 50px);
   background: linear-gradient(
       to right,
       rgba(12, 12, 12, 0.699),
@@ -314,3 +325,48 @@ body {
   transition: all linear 1s;
 }
 /* end of banner */
+/* peter logo */
+.nav-logo {
+  display: flex;
+  justify-content: center;
+}
+.nav-logo img {
+  width: 7rem;
+}
+.nav-logo-fixed {
+  display: none;
+}
+.image2 {
+  width: 5rem;
+  display: none;
+}
+.nav-group {
+  /* display: flex; */
+  align-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.nav-btn {
+  display: none;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 0 0;
+  list-style-type: none;
+}
+.nav-links-fixed {
+  padding: 2rem 0 0 0;
+}
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--mainBlack);
+}
+.nav-item > .active {
+  padding: 0.5rem;
+  border: solid var(--mainBlack) 0.2rem;
+}
+/* end of peter logo */
