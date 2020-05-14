@@ -17,9 +17,9 @@ function App() {
       <RenderTop />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/posts/:slug" component={MainBlog} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
+        <Route path="/posts/:slug" component={MainBlog} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
       <Footer />

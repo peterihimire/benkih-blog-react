@@ -25,33 +25,31 @@ class MainBlog extends Component {
     console.log(post, typeof post);
     console.log(getPost);
     return (
-      <>
-        <section className="single-post">
-          <div className="single-post-center">
-            <div className="single-post-content">
-              <Link to="/" className="single-post-btn">
-                back to all posts
-              </Link>
-              <div className="single-post-title">
-                <h1>{title}</h1>
-                <small>
-                  {author}/{readableDate(date)}
-                </small>
-              </div>
+      <section className="single-post">
+        <div className="single-post-center">
+          <div className="single-post-content">
+            <Link to="/" className="single-post-btn">
+              back to all posts
+            </Link>
+            <div className="single-post-title">
+              <h1>{title}</h1>
+              <small>
+                {author}/{readableDate(date)}
+              </small>
+            </div>
 
-              <img
-                src={image}
-                width="100%"
-                alt="single-post"
-                className="single-post-image"
-              />
-              <div className="single-post-body">
-                <MD source={blog} />
-              </div>
+            <img
+              src={image}
+              width="100%"
+              alt="single-post"
+              className="single-post-image"
+            />
+            <div className="single-post-body">
+              <MD source={blog} />
             </div>
           </div>
-        </section>
-      </>
+        </div>
+      </section>
     );
   }
 }

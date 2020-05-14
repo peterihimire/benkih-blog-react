@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/peter-logo.svg";
 import { FaAlignRight } from "react-icons/fa";
 import { PostContext } from "../Context";
+import NavLinksList from "../components/NavLinksList";
 
 const Navbar = () => {
   const context = useContext(PostContext);
@@ -27,18 +28,7 @@ const Navbar = () => {
             </Link>
           </div>
           <ul className={isFixed ? "nav-links nav-links-fixed" : "nav-links"}>
-            <li className="nav-item">
-              <Link to="/">home</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/posts">posts</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about">about</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact">contact</Link>
-            </li>
+            <NavLinksList />
           </ul>
         </div>
       </div>

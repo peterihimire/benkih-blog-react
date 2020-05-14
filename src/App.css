@@ -29,6 +29,11 @@ body {
   font-size: 1.6rem;
 }
 
+.active {
+  border: solid var(--mainBlack) 0.2rem;
+  padding: 0.5rem;
+}
+
 /* end of globals */
 
 /* navbar */
@@ -104,11 +109,17 @@ body {
   font-weight: bolder;
   text-transform: uppercase;
   color: var(--mainBlack);
+  letter-spacing: 0.1rem;
 }
-.nav-item > .active {
+
+.active {
+  border: solid var(--mainBlack) 0.2rem;
+  padding: 0.5rem;
+}
+/* .nav-item > .active {
   padding: 0.5rem;
   border: solid var(--mainBlack) 0.2rem;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .navbar {
@@ -139,6 +150,14 @@ body {
     padding: 0.8rem 0 0 0;
     list-style-type: none;
   }
+  .nav-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--mainBlack);
+    letter-spacing: 0.3rem;
+  }
   .nav-logo {
     display: flex;
     justify-content: center;
@@ -167,12 +186,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
-.section-title h4 {
+/* .section-title h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   padding: 0 0 1rem 0;
-}
+} */
 .title-div {
   width: 4rem;
   height: 0.3rem;
@@ -185,7 +204,7 @@ body {
   .section-title h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
   }
   .title-div {
     width: 7rem;
@@ -416,7 +435,7 @@ body {
   align-items: center;
   padding: 0.8rem 1.3rem;
   text-decoration: none;
-  border: 3px solid var(--mainWhite);
+  border: 1.5px solid var(--mainWhite);
   color: var(--mainWhite);
   cursor: pointer;
   text-transform: uppercase;
@@ -428,7 +447,7 @@ body {
 }
 .post-btn:hover {
   cursor: pointer;
-  border: solid 0.3rem var(--mainWhite);
+  border: solid 1.5px var(--mainWhite);
   background: var(--primaryColor);
   transition: all linear 1s;
 }
@@ -441,7 +460,7 @@ body {
   .banner p {
     font-size: 3rem;
     font-weight: bold;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     margin-bottom: 2rem;
   }
   .post-btn {
@@ -456,7 +475,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     background: none;
     transition: all linear 1s;
   }
@@ -511,3 +530,54 @@ footer {
   /* text-transform: uppercase; */
 }
 /* end of footer */
+/* about me */
+.about {
+  padding: 6rem 2rem;
+}
+.about-me {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 0 0 6rem 0;
+}
+.about-img-div {
+  display: flex;
+  justify-content: center;
+}
+.about-text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text-div p {
+  margin: 0 0 2rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .about-center {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+/* end of about me */
+/* contact section */
+.contact {
+  padding: 6rem 2rem;
+  align-content: center;
+  align-items: center;
+}
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contact-center {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+/* end of contact section */
