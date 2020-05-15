@@ -17,7 +17,9 @@ class PostProvider extends Component {
     posts: [],
     sortedPosts: [],
     loading: true,
-    isFixed: false
+    isFixed: false,
+    isOpen: false,
+    isVisible: false
   };
   //getData
   getData = async () => {
@@ -46,6 +48,23 @@ class PostProvider extends Component {
     this.getData();
     // this.setState({ posts, loading: false, sortedPosts: posts });
   }
+  openHandler = () => {
+    this.setState({
+      isOpen: true
+    });
+  };
+
+  closeHandler = () => {
+    this.setState({
+      isOpen: false
+    });
+  };
+
+  removeOverlay = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
   toggleVisibility = () => {
     let position = window.pageYOffset;
     console.log(position);
@@ -84,7 +103,15 @@ class PostProvider extends Component {
 
   render() {
     return (
-      <PostContext.Provider value={{ ...this.state, getPost: this.getPost }}>
+      <PostContext.Provider
+        value={{
+          ...this.state,
+          getPost: this.getPost,
+          openHandler: this.openHandler,
+          closeHandler: this.closeHandler,
+          removeOverlay: this.removeOverlay
+        }}
+      >
         {this.props.children}
       </PostContext.Provider>
     );

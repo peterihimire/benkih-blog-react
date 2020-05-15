@@ -9,11 +9,13 @@ import Navbar from "./components/Navbar";
 import { Route, Switch } from "react-router-dom";
 import RenderTop from "./components/RenderTop";
 import Footer from "./components/Footer";
+import SideNav from "./components/SideNav";
 
 function App() {
   return (
     <>
       <Navbar />
+      <SideNav />
       <RenderTop />
       <Switch>
         <Route exact path="/" component={Home} />
