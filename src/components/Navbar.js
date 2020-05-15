@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/peter-logo.svg";
-import { FaAlignLeft } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { PostContext } from "../Context";
 import NavLinksList from "../components/NavLinksList";
 
@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="nav-header">
           <div className="nav-btn-logo">
             <button type="button" className="nav-btn" onClick={openHandler}>
-              <FaAlignLeft className="nav-icon" />
+              <FaBars className="nav-icon" />
             </button>
             <Link to="/" className="peter-logo">
               <img src={logo} alt="logo" className="image2" />
