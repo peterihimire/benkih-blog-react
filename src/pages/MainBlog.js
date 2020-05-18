@@ -28,7 +28,7 @@ class MainBlog extends Component {
       <section className="single-post">
         <div className="single-post-center">
           <div className="single-post-content">
-            <Link to="/" className="single-post-btn">
+            <Link to="/posts" className="single-post-btn">
               all posts
             </Link>
             <div className="single-post-title">
