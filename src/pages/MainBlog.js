@@ -29,7 +29,7 @@ class MainBlog extends Component {
         <div className="single-post-center">
           <div className="single-post-content">
             <Link to="/" className="single-post-btn">
-              back to all posts
+              all posts
             </Link>
             <div className="single-post-title">
               <h1>{title}</h1>

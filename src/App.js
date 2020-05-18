@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
+import Posts from "./pages/Posts";
 import MainBlog from "./pages/MainBlog";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
@@ -10,7 +11,6 @@ import { Route, Switch } from "react-router-dom";
 import RenderTop from "./components/RenderTop";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
-import Posts from "./pages/Posts";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
       <RenderTop />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/posts" component={Posts} />
+        <Route path="/posts" component={Posts} />
         <Route path="/posts/:slug" component={MainBlog} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />

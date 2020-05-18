@@ -1,5 +1,4 @@
 import React from "react";
-import PostContainer from "../components/PostContainer";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
@@ -16,7 +15,6 @@ const Home = () => {
         </Banner>
       </Hero>
       <FeaturedPosts />
-      {/* <PostContainer /> */}
     </>
   );
 };

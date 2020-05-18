@@ -7,7 +7,7 @@ const FeaturedPosts = () => {
   const context = useContext(PostContext);
   console.log(context);
   const { featuredPosts } = context;
-  const { title, image, slug, author, date, id } = featuredPosts;
+  // const { title, image, slug, author, date, id } = featuredPosts;
   console.log(featuredPosts);
 
   return (

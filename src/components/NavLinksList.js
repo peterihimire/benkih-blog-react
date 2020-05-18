@@ -5,7 +5,7 @@ function NavLinksList() {
   return (
     <>
       <li className="nav-item">
-        <NavLink activeClassName="active" to="/">
+        <NavLink exact activeClassName="active" to="/">
           home
         </NavLink>
       </li>
