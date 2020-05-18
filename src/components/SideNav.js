@@ -29,7 +29,7 @@ function SideNav() {
         <div className="menu-nav">
           <ul className="side-nav-links">
             <li className="side-nav-item">
-              <NavLink activeClassName="active" to="/">
+              <NavLink exact activeClassName="active" to="/">
                 home
               </NavLink>
             </li>

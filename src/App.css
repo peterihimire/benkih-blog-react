@@ -714,6 +714,15 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: transparent;
+  border: solid 0.2rem var(--mainBlack);
+  text-decoration: none;
+  color: var(--mainBlack); */
 }
 .featured-posts {
   padding: 5rem 2rem;
