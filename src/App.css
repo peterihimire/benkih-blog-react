@@ -698,3 +698,32 @@ footer {
 }
 
 /* end of side nav */
+/* single featured */
+.single-featured {
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.img-container {
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+}
+.featured-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.featured-posts {
+  padding: 5rem 2rem;
+}
+.featured-posts-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+/* end of single featured */

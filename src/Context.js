@@ -16,6 +16,8 @@ class PostProvider extends Component {
   state = {
     posts: [],
     sortedPosts: [],
+    featuredPosts: [],
+    popularPosts: [],
     loading: true,
     isFixed: false,
     isOpen: false,
@@ -29,9 +31,14 @@ class PostProvider extends Component {
         order: "sys.createdAt"
       });
       let posts = this.formatData(response.items);
+      let featuredPosts = posts.filter(post => post.featured === true);
+      let popularPosts = posts.filter(post => post.popular === true);
+      console.log(featuredPosts, popularPosts);
       this.setState({
         posts,
         sortedPosts: posts,
+        featuredPosts,
+        popularPosts,
         loading: false
       });
     } catch (error) {

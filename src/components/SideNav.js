@@ -9,10 +9,11 @@ function SideNav() {
   console.log(isOpen, closeHandler, removeOverlay);
   console.log(context);
   return (
-    <div
-      className={isOpen ? "menu-overlay transparent-bcg" : "menu-overlay"}
-      onClick={closeHandler}
-    >
+    <>
+      <div
+        className={isOpen ? "menu-overlay transparent-bcg" : "menu-overlay"}
+        onClick={closeHandler}
+      />
       <div className={isOpen ? "menu show-menu" : "menu"}>
         <div className="menu-header">
           <span className="close-menu">
@@ -50,7 +51,7 @@ function SideNav() {
           </ul>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
