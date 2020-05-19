@@ -6,15 +6,17 @@ const About = () => {
   return (
     <section className="about">
       <div className="about-center">
-        <Title title="about me" />
+        <Title title="about" />
         <div className="about-me">
           <div className="about-img-div">
-            <img
-              src={petersPix}
-              width="300px"
-              height="350px"
-              alt="peter ihimire"
-            />
+            <div className="about-img-container">
+              <img
+                src={petersPix}
+                width="300px"
+                height="350px"
+                alt="peter ihimire"
+              />
+            </div>
           </div>
           <div className="about-text-div">
             <p>
