@@ -353,12 +353,7 @@ body {
 /* hero */
 .hero {
   min-height: calc(70vh - 50px);
-  background: linear-gradient(
-      to right,
-      rgba(12, 12, 12, 0.699),
-      rgba(54, 130, 170, 0.699)
-    ),
-    url("./images/blog-header.jpg") center/cover no-repeat;
+  background: url("./images/blog-header.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -374,12 +369,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     min-height: calc(70vh - 50px);
-    background: linear-gradient(
-        to right,
-        rgba(12, 12, 12, 0.699),
-        rgba(54, 130, 170, 0.699)
-      ),
-      url("./images/blog-header.jpg") center/cover no-repeat;
+    background: url("./images/blog-header.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,15 +386,21 @@ body {
 
 /* banner */
 .banner {
+  background: linear-gradient(
+    to right,
+    rgba(12, 12, 12, 0.699),
+    rgba(54, 130, 170, 0.699)
+  );
   color: var(--mainWhite);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
+  padding: 4rem 2rem;
 }
 
 .banner h1 {
-  font-size: var(--smallFont);
+  font-size: 3.5rem;
   letter-spacing: 0.1rem;
   text-align: center;
 }
@@ -438,8 +434,16 @@ body {
   transition: all linear 1s;
 }
 @media screen and (min-width: 768px) {
+  .banner {
+    background: linear-gradient(
+      to right,
+      rgba(12, 12, 12, 0.699),
+      rgba(54, 130, 170, 0.699)
+    );
+    padding: 6rem;
+  }
   .banner h1 {
-    font-size: var(--largeFont);
+    font-size: var(--mediumFont);
     letter-spacing: 0.3rem;
     text-align: center;
   }
@@ -453,7 +457,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.8rem 4rem;
+    padding: 1.5rem 3rem;
     text-decoration: none;
     border: 3px solid var(--mainWhite);
     color: var(--mainWhite);
