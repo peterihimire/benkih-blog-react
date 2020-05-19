@@ -14,7 +14,7 @@ const Post = ({ post }) => {
       <img src={image} alt="post-img" className="post-image" />
       <div>
         <div className="post-title">
-          <h3>{title}</h3>
+          <h4>{title}</h4>
           <small>
             {`by ${author}`}/{` ${readableDate(date)}`}
           </small>

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { PostContext } from "../Context";
 import { Link } from "react-router-dom";
 import Title from "../components/Title";
+// import { readableDate } from "../components/helpers";
 
 const FeaturedPosts = () => {
   const context = useContext(PostContext);
@@ -21,16 +22,16 @@ const FeaturedPosts = () => {
                 <img src={featuredPost.image} alt="background-featured" />
                 <Link
                   to={`/posts/${featuredPost.slug}`}
-                  className="featured-link"
+                  className="featured-link featured-btn"
                 >
                   read
                 </Link>
               </div>
-              <div>
-                <p>{featuredPost.title}</p>
-                <small>
-                  {featuredPost.author}/{featuredPost.date}
-                </small>
+              <div className="featured-info">
+                <h4>{featuredPost.title}</h4>
+                <div className="featured-author">
+                  <small>{`by ${featuredPost.author}`}</small>
+                </div>
               </div>
             </article>
           );

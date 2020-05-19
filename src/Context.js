@@ -89,7 +89,7 @@ class PostProvider extends Component {
     let tempItems = items.map(item => {
       let id = item.sys.id;
       let image = item.fields.image.fields.file.url;
-      let description = item.fields.blog.slice(0, 130) + "...";
+      let description = item.fields.blog.slice(0, 100) + "...";
       let post = { ...item.fields, id, image, description };
       console.log(post);
       return post;
