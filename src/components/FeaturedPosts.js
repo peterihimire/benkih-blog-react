@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { PostContext } from "../Context";
 import { Link } from "react-router-dom";
-import Title from "../components/Title";
+// import Title from "../components/Title";
 // import { readableDate } from "../components/helpers";
 
 const FeaturedPosts = () => {
@@ -13,7 +13,7 @@ const FeaturedPosts = () => {
 
   return (
     <section className="featured-posts">
-      <Title title="featured post" />
+      {/* <Title title="featured post" /> */}
       <div className="featured-posts-center">
         {featuredPosts.map(featuredPost => {
           return (
@@ -26,12 +26,6 @@ const FeaturedPosts = () => {
                 >
                   read
                 </Link>
-              </div>
-              <div className="featured-info">
-                <h4>{featuredPost.title}</h4>
-                <div className="featured-author">
-                  <small>{`by ${featuredPost.author}`}</small>
-                </div>
               </div>
             </article>
           );

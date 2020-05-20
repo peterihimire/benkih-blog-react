@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import FeaturedPosts from "../components/FeaturedPosts";
-
+import PopularPosts from "../components/PopularPosts";
 const Home = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const Home = () => {
         </Banner>
       </Hero>
       <FeaturedPosts />
+      <PopularPosts />
     </>
   );
 };
