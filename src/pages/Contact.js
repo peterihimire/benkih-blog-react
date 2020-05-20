@@ -14,8 +14,8 @@ const Contact = () => {
             <span className="contact-span">phone:</span>+234 806 095 8134
           </div>
           <div>
-            <span className="contact-span">address:</span>6 oyediran street,
-            ikeja, lagos state.
+            <span className="contact-span">address:</span>6 Oyediran street,
+            Ikeja, Lagos State.
           </div>
         </div>
       </div>

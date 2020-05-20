@@ -348,7 +348,7 @@ body {
 
 /* hero */
 .hero {
-  min-height: calc(70vh - 50px);
+  min-height: calc(80vh - 50px);
   background: url("./images/blog-header.jpg") center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -579,13 +579,13 @@ footer {
 .contact-div > div {
   font-size: 2rem;
   border: 0.3rem solid var(--mainBlack);
-  padding: 3rem 4rem;
+  padding: 2rem 3rem;
   margin: 0 0 3rem 0;
   transition: all 0.3s linear;
 }
 
 .contact-div > div:hover {
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   background: var(--primaryColor);
   color: var(--mainWhite);
 }
@@ -593,6 +593,7 @@ footer {
   color: var(--primaryColor);
   text-transform: capitalize;
   padding: 0 1rem 0 0;
+  font-weight: bold;
 }
 .contact-span:hover {
   color: var(--mainWhite);
@@ -601,6 +602,26 @@ footer {
   .contact-center {
     max-width: 1170px;
     margin: 0 auto;
+  }
+
+  .contact-div > div {
+    font-size: 2rem;
+    border: 0.5rem solid var(--mainBlack);
+    padding: 3rem 4rem;
+    margin: 0 0 4rem 0;
+    transition: all 0.3s linear;
+  }
+
+  .contact-div > div:hover {
+    padding: 2rem 3rem;
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+  }
+  .contact-span {
+    color: var(--primaryColor);
+    text-transform: capitalize;
+    padding: 0 1rem 0 0;
+    font-weight: bold;
   }
 }
 /* end of contact section */
