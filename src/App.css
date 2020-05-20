@@ -1,7 +1,5 @@
 :root {
   font-size: 62.5%;
-  /* --primaryColor: #008ed6; */
-  /* --primaryColor: #d6a400; */
   --primaryColor: #d69d00;
   --secondaryColor: #868e96;
   --mainWhite: #fff;
@@ -519,6 +517,10 @@ footer {
 .about {
   padding: 6rem 2rem;
 }
+.about-pix {
+  width: 270px;
+  /* height: 350px; */
+}
 .about-me {
   /* display: flex; */
   display: grid;
@@ -534,8 +536,8 @@ footer {
 .about-img-container {
   border: solid 0.2rem var(--primaryColor);
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 270px;
+  height: 362px;
   top: 20px;
   margin: 0 0 2rem 0;
 }
@@ -570,10 +572,30 @@ footer {
 }
 .contact-div {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 9rem 0;
+}
+.contact-div > div {
+  font-size: 2rem;
+  border: 0.3rem solid var(--mainBlack);
+  padding: 3rem 4rem;
+  margin: 0 0 3rem 0;
+  transition: all 0.3s linear;
+}
+
+.contact-div > div:hover {
+  padding: 2rem 3rem;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+}
+.contact-span {
+  color: var(--primaryColor);
+  text-transform: capitalize;
+  padding: 0 1rem 0 0;
+}
+.contact-span:hover {
+  color: var(--mainWhite);
 }
 @media screen and (min-width: 768px) {
   .contact-center {

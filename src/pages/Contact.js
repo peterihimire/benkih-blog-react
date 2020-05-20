@@ -8,14 +8,14 @@ const Contact = () => {
         <Title title="contact" />
         <div className="contact-div">
           <div>
-            <p>
-              If you are looking for a way to get hold of me you can send me an
-              email at <a href="https://gmail.com">peterihimire@gmail.com</a>{" "}
-            </p>
-            <p>
-              You can also reach me on twitter and github at{" "}
-              <a href="https://twitter.com">peterihimire</a>{" "}
-            </p>
+            <span className="contact-span">email:</span>peterihimire@gmail.com
+          </div>
+          <div>
+            <span className="contact-span">phone:</span>+234 806 095 8134
+          </div>
+          <div>
+            <span className="contact-span">address:</span>6 oyediran street,
+            ikeja, lagos state.
           </div>
         </div>
       </div>

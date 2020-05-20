@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
-import petersPix from "../images/post-1.jpeg";
+import petersPix from "../images/peter-nh.jpg";
 
 const About = () => {
   return (
@@ -12,9 +12,10 @@ const About = () => {
             <div className="about-img-container">
               <img
                 src={petersPix}
-                width="300px"
-                height="350px"
+                // width="300px"
+                // height="350px"
                 alt="peter ihimire"
+                className="about-pix"
               />
             </div>
           </div>
