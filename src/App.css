@@ -465,6 +465,12 @@ body {
     background: none;
     transition: all linear 1s;
   }
+  .post-btn:hover {
+    cursor: pointer;
+    border: solid 3px var(--mainWhite);
+    background: var(--primaryColor);
+    transition: all linear 1s;
+  }
 }
 /* end of banner */
 
