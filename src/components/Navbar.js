@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/peter-logo.svg";
 import { FaBars } from "react-icons/fa";
-import { PostContext } from "../Context";
+import { PostContext } from "../context";
 import NavLinksList from "../components/NavLinksList";
 
 const Navbar = () => {

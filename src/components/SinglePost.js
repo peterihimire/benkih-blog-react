@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { PostContext } from "../Context";
+import { PostContext } from "../context";
 import MD from "react-markdown";
 import { readableDate } from "../components/helpers";
 

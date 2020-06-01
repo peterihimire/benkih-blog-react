@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FaWindowClose } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-import { PostContext } from "../Context";
+import { PostContext } from "../context";
 
 function SideNav() {
   const context = useContext(PostContext);

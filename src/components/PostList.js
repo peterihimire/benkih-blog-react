@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./Post";
 import { useContext } from "react";
-import { PostContext } from "../Context";
+import { PostContext } from "../context";
 
 const PostList = () => {
   const context = useContext(PostContext);
