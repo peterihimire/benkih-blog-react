@@ -1,10 +1,17 @@
 import React from "react";
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>This is from NotFound</h1>
-    </div>
+    <Hero>
+      <Banner name="404" title="page not found">
+        <Link to="/" className="post-btn">
+          back to home
+        </Link>
+      </Banner>
+    </Hero>
   );
 };
 
