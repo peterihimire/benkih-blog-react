@@ -14,8 +14,8 @@ const Navbar = () => {
     <nav className={isFixed ? "navbar-fixed navbar" : "navbar"}>
       <div className="nav-center">
         <div className={isFixed ? "nav-logo nav-logo-fixed" : "nav-logo"}>
-          <Link to="/" className="peter-logo">
-            {/* <img src={logo} alt="logo" /> */} <h1>benkih</h1>
+          <Link to="/" className="peter-logo-1">
+            {/* <img src={logo} alt="logo" /> */}benkih
           </Link>
         </div>
         <div className="nav-header">
@@ -23,8 +23,8 @@ const Navbar = () => {
             <button type="button" className="nav-btn" onClick={openHandler}>
               <FaBars className="nav-icon" />
             </button>
-            <Link to="/" className="peter-logo">
-              <img src={logo} alt="logo" className="image2" />
+            <Link to="/" className="peter-logo-2">
+              {/* <img src={logo} alt="logo" className="image2" /> */}benkih
             </Link>
           </div>
           <ul className={isFixed ? "nav-links nav-links-fixed" : "nav-links"}>
