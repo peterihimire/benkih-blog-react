@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className={isFixed ? "nav-logo nav-logo-fixed" : "nav-logo"}>
           <Link to="/" className="peter-logo">
-            <img src={logo} alt="logo" />
+            {/* <img src={logo} alt="logo" /> */} <h1>benkih</h1>
           </Link>
         </div>
         <div className="nav-header">

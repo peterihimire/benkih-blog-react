@@ -57,6 +57,14 @@ body {
 .nav-logo-fixed {
   display: none;
 }
+.peter-logo {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: var(--mainSpacing);
+}
 .image2 {
   width: 4rem;
 }
@@ -97,7 +105,7 @@ body {
   .navbar {
     position: sticky;
     width: 100%;
-    padding: 2.7rem 2rem 2.7rem 2rem;
+    padding: 2.7rem 2rem 0rem 2rem;
     /* z-index: 1; */
     transition: var(--mainTransition);
     background: none;
@@ -135,7 +143,7 @@ body {
   .nav-logo {
     display: flex;
     justify-content: center;
-    padding: 0 0 4rem 0;
+    padding: 0 0 2rem 0;
   }
   .nav-logo img {
     width: 7rem;
