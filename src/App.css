@@ -38,7 +38,6 @@ body {
   background: var(--mainWhite);
   box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849);
   z-index: 1;
-  transition: var(--mainTransition);
   background: var(--mainWhite);
 }
 
@@ -94,11 +93,11 @@ body {
 .nav-links a {
   margin: 0 1rem;
   text-decoration: none;
-  font-weight: bolder;
   text-transform: uppercase;
   color: var(--mainBlack);
   letter-spacing: 0.1rem;
   display: none;
+  font-size: 1.4rem;
 }
 
 .active {
@@ -110,18 +109,42 @@ body {
   .navbar {
     position: sticky;
     width: 100%;
-    padding: 2.7rem 2rem 2.7rem 2rem;
-    /* z-index: 1; */
-    transition: var(--mainTransition);
-    background: none;
-    box-shadow: none;
+    padding: 1.5rem 0;
+    background: rgba(255, 255, 255, 0.856);
+    box-shadow: 0 0 0.2rem 0 rgba(173, 172, 172, 0.849);
+    margin: 0 0 2rem 0;
+    visibility: visible;
+  }
+
+  .navbar-hidden {
+    /* display: none; */
+    visibility: hidden;
+    padding: 1.8rem;
+  }
+  .hero-padding-top {
+    margin: 6.2rem 0 0 0;
   }
   .navbar-fixed {
     position: fixed;
-    background: var(--mainWhite);
-    box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849);
-    padding: 2rem;
-    transition: var(--mainTransition);
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.856);
+    box-shadow: 0 0 0.2rem 0 rgba(128, 126, 126, 0.849);
+    padding: 1.5rem 2rem;
+    z-index: 2;
+    width: 100%;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  .nav-header-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-f {
+    display: none;
   }
   .nav-btn {
     display: none;
@@ -133,35 +156,42 @@ body {
   .nav-links {
     display: flex;
     justify-content: center;
-    padding: 0.8rem 0 0 0;
     list-style-type: none;
   }
   .nav-links a {
     margin: 0 1rem;
     text-decoration: none;
-    font-weight: bolder;
     text-transform: uppercase;
     color: var(--mainBlack);
     letter-spacing: 0.1rem;
     display: inline;
   }
+  .navbar-logo {
+    padding: 3rem 0;
+  }
   .nav-logo {
     display: flex;
     justify-content: center;
-    padding: 0 0 2rem 0;
+    padding: 0 0 0rem 0;
   }
   .nav-logo img {
     width: 7rem;
     display: inline-block;
   }
-  .nav-logo-fixed {
-    display: none;
-  }
   .peter-logo-1 {
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--primaryColor);
-    font-size: 3.5rem;
+    color: var(--mainBlack);
+    font-size: 4.5rem;
+    font-weight: bolder;
+    letter-spacing: var(--mainSpacing);
+    display: inline-block;
+  }
+  .p-logo-fixed {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--mainBlack);
+    font-size: 3rem;
     font-weight: bolder;
     letter-spacing: var(--mainSpacing);
     display: inline-block;

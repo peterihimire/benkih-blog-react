@@ -75,7 +75,7 @@ class PostProvider extends Component {
   toggleVisibility = () => {
     let position = window.pageYOffset;
     console.log(position);
-    if (position >= 118.75) {
+    if (position >= 105.75) {
       this.setState({
         isFixed: true
       });

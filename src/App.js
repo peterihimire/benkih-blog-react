@@ -6,16 +6,20 @@ import MainBlog from "./pages/MainBlog";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Logo from "./components/Logo";
 import Navbar from "./components/Navbar";
 import { Route, Switch } from "react-router-dom";
 import RenderTop from "./components/RenderTop";
 import Footer from "./components/Footer";
 import SideNav from "./components/SideNav";
+// import FixedNav from "./components/FixedNav";
 
 function App() {
   return (
     <>
+      <Logo />
       <Navbar />
+      {/* <FixedNav /> */}
       <SideNav />
       <RenderTop />
       <Switch>
