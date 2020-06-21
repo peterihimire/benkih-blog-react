@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import items from "./data";
 import Client from "./Contentful";
+import img from "./images/blog-header.jpg";
 
 Client.getEntries({
   content_type: "portfolioBlog"
@@ -14,6 +15,24 @@ const PostContext = React.createContext();
 
 class PostProvider extends Component {
   state = {
+    categories: [
+      {
+        title: "programming",
+        image: img
+      },
+      {
+        title: "fashion",
+        image: img
+      },
+      {
+        title: "career",
+        image: img
+      },
+      {
+        title: "technology",
+        image: img
+      }
+    ],
     posts: [],
     sortedPosts: [],
     featuredPosts: [],

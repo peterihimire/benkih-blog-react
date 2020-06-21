@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import FeaturedPosts from "../components/FeaturedPosts";
 import PopularPosts from "../components/PopularPosts";
+import CategoriesList from "../components/CategoriesList";
 const Home = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Home = () => {
           </Link>
         </Banner>
       </Hero>
+      <CategoriesList />
       <FeaturedPosts />
       <PopularPosts />
     </>
