@@ -7,15 +7,15 @@ const category = props => {
   const { title, image } = props.category;
   console.log(title, image);
   return (
-    <article className="category">
-      <div className="category-center">
-        <img src={image} alt="category" style={{ width: "100%" }} />
+    <article className="category-center">
+      <img src={image} alt="category" className="main-img" />
+      <Link to="/">
         <div className="category-img">
-          <div className="category-title">
-            <p>{title}</p>
-          </div>
+          <Link to="/" className="category-title">
+            {title}
+          </Link>
         </div>
-      </div>
+      </Link>
     </article>
   );
 };
