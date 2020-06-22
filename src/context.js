@@ -109,7 +109,8 @@ class PostProvider extends Component {
       let id = item.sys.id;
       let image = item.fields.image.fields.file.url;
       let description = item.fields.blog.slice(0, 100) + "...";
-      let post = { ...item.fields, id, image, description };
+      let description2 = item.fields.blog.slice(0, 150) + "...";
+      let post = { ...item.fields, id, image, description, description2 };
       console.log(post);
       return post;
     });

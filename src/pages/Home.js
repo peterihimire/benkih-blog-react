@@ -3,8 +3,9 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import FeaturedPosts from "../components/FeaturedPosts";
-import PopularPosts from "../components/PopularPosts";
+// import PopularPosts from "../components/PopularPosts";
 import CategoriesList from "../components/CategoriesList";
+import HomePostContainer from "../components/HomePostContainer";
 const Home = () => {
   return (
     <>
@@ -16,8 +17,9 @@ const Home = () => {
         </Banner>
       </Hero>
       <CategoriesList />
+      <HomePostContainer />
       <FeaturedPosts />
-      <PopularPosts />
+      {/* <PopularPosts /> */}
     </>
   );
 };
