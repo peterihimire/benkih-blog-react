@@ -535,6 +535,7 @@ body {
 footer {
   background: none;
   color: var(--mainBlack);
+  padding: 0 2rem;
 }
 .footer-content {
   display: flex;
@@ -546,12 +547,13 @@ footer {
   width: 6rem;
 }
 .follow-group {
-  padding: 2rem 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .follow-item {
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
 }
 .follow-item a {
   color: var(--mainBlack);
@@ -560,21 +562,18 @@ footer {
   font-size: 1.2rem;
 }
 .follow-icon-container-1 {
-  /* background: #3b5998; */
   background: var(--mainWhite);
   padding: 1.2rem 1.2rem 0.7rem 1.2rem;
   border-radius: 0.1rem;
   font-size: 1.5rem;
 }
 .follow-icon-container-2 {
-  /* background: #55acee; */
   background: var(--mainWhite);
   padding: 1.2rem 1.2rem 0.7rem 1.2rem;
   border-radius: 0.1rem;
   font-size: 1.5rem;
 }
 .follow-icon-container-3 {
-  /* background: #e95950; */
   background: var(--mainWhite);
   padding: 1.2rem 1.2rem 0.7rem 1.2rem;
   border-radius: 0.1rem;
@@ -582,6 +581,7 @@ footer {
 }
 .footer-copyright {
   padding: 2rem 0 0 0;
+  text-align: center;
 }
 /* end of footer */
 
@@ -591,10 +591,8 @@ footer {
 }
 .about-pix {
   width: 270px;
-  /* height: 350px; */
 }
 .about-me {
-  /* display: flex; */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-row-gap: 2rem;

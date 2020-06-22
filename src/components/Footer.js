@@ -15,10 +15,8 @@ const Footer = () => {
     <footer>
       <div className="footer-center">
         <div className="footer-content">
-          {/* <img src={logo} alt="peters logo" className="peter-logo-alt" /> */}
-
-          <ul className="follow-group">
-            <li className="follow-item">
+          <div className="follow-group">
+            <div className="follow-item">
               <div className="follow-icon-container-1">
                 <a
                   href="https://facebook.com/ihimirepeter"
@@ -31,8 +29,8 @@ const Footer = () => {
                   facebook
                 </a>
               </div>
-            </li>
-            <li className="follow-item">
+            </div>
+            <div className="follow-item">
               <div className="follow-icon-container-2">
                 <a
                   href="https://twitter.com/ptechanalysis"
@@ -45,8 +43,8 @@ const Footer = () => {
                   twitter
                 </a>
               </div>
-            </li>
-            <li className="follow-item">
+            </div>
+            <div className="follow-item">
               <div className="follow-icon-container-3">
                 <a
                   href="https://instagram.com/peterihimire"
@@ -59,8 +57,8 @@ const Footer = () => {
                   instagram
                 </a>
               </div>
-            </li>
-            <li className="follow-item">
+            </div>
+            <div className="follow-item">
               <div className="follow-icon-container-3">
                 <a
                   href="https://instagram.com/peterihimire"
@@ -73,8 +71,8 @@ const Footer = () => {
                   linkedin
                 </a>
               </div>
-            </li>
-            <li className="follow-item">
+            </div>
+            <div className="follow-item">
               <div className="follow-icon-container-3">
                 <a
                   href="https://instagram.com/peterihimire"
@@ -87,8 +85,8 @@ const Footer = () => {
                   dribble
                 </a>
               </div>
-            </li>
-            <li className="follow-item">
+            </div>
+            <div className="follow-item">
               <div className="follow-icon-container-3">
                 <a
                   href="https://instagram.com/peterihimire"
@@ -101,8 +99,8 @@ const Footer = () => {
                   github
                 </a>
               </div>
-            </li>
-            <li className="follow-item">
+            </div>
+            <div className="follow-item">
               <div className="follow-icon-container-3">
                 <a
                   href="https://instagram.com/peterihimire"
@@ -115,8 +113,8 @@ const Footer = () => {
                   youtube
                 </a>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <div className="footer-copyright">
             <p>
               BENKIH | Designed by Peter Ihimire | &copy; Copyright All right

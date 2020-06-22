@@ -29,8 +29,7 @@ const Navbar = () => {
                 <FaBars className="nav-icon" />
               </button>
               <Link to="/" className="peter-logo-2 peter-logo-2-v">
-                {/* <img src={logo} alt="logo" className="image2" /> */}the
-                benkih
+                {/* <img src={logo} alt="logo" className="image2" /> */}benkih
               </Link>
             </div>
             <ul className={isFixed ? "nav-links nav-links-fixed" : "nav-links"}>
