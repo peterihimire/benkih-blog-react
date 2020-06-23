@@ -2,8 +2,7 @@ import React from "react";
 import HomePost from "../components/HomePost";
 import { PostConsumer } from "../context";
 import ReactPaginate from "react-paginate";
-import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
-// import Paginate from "../components/Paginate";
+// import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 
 const HomePostList = () => {
   return (
