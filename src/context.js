@@ -33,7 +33,11 @@ class PostProvider extends Component {
         image: img
       }
     ],
+    offset: 0,
     posts: [],
+    perPage: 4,
+    currentPage: 0,
+    slice: [],
     sortedPosts: [],
     featuredPosts: [],
     popularPosts: [],
@@ -50,6 +54,11 @@ class PostProvider extends Component {
         order: "sys.createdAt"
       });
       let posts = this.formatData(response.items);
+      const slice = posts.slice(
+        this.state.offset,
+        this.state.offset + this.state.perPage
+      );
+      console.log(slice);
       let featuredPosts = posts.filter(post => post.featured === true);
       let popularPosts = posts.filter(post => post.popular === true);
       console.log(featuredPosts, popularPosts);
@@ -58,7 +67,9 @@ class PostProvider extends Component {
         sortedPosts: posts,
         featuredPosts,
         popularPosts,
-        loading: false
+        loading: false,
+        slice,
+        pageCount: Math.ceil(posts.length / this.state.perPage)
       });
     } catch (error) {
       console.log(error);
@@ -128,6 +139,20 @@ class PostProvider extends Component {
     return post;
   };
 
+  handlePageClick = e => {
+    const selectedPage = e.selected;
+    const offset = selectedPage * this.state.perPage;
+
+    this.setState(
+      {
+        currentPage: selectedPage,
+        offset: offset
+      },
+      () => {
+        this.getData();
+      }
+    );
+  };
   render() {
     return (
       <PostContext.Provider
@@ -136,7 +161,8 @@ class PostProvider extends Component {
           getPost: this.getPost,
           openHandler: this.openHandler,
           closeHandler: this.closeHandler,
-          removeOverlay: this.removeOverlay
+          removeOverlay: this.removeOverlay,
+          handlePageClick: this.handlePageClick
         }}
       >
         {this.props.children}
