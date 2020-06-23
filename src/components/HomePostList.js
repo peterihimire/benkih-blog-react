@@ -2,6 +2,7 @@ import React from "react";
 import HomePost from "../components/HomePost";
 import { PostConsumer } from "../context";
 import ReactPaginate from "react-paginate";
+import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 // import Paginate from "../components/Paginate";
 
 const HomePostList = () => {
@@ -22,6 +23,8 @@ const HomePostList = () => {
               );
             })}
             <ReactPaginate
+              // previousLabel={<FaAngleDoubleLeft />}
+              // nextLabel={<FaAngleDoubleRight />}
               previousLabel={"prev"}
               nextLabel={"next"}
               breakLabel={"..."}
