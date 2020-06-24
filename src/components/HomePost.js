@@ -1,5 +1,4 @@
 import React from "react";
-// import image from "../images/blog-header.jpg";
 import { Link } from "react-router-dom";
 import { readableDate } from "../components/helpers";
 import MD from "react-markdown";
