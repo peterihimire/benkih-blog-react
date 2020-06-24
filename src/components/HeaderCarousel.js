@@ -4,7 +4,7 @@ import img2 from "../images/post-2.jpeg";
 import img3 from "../images/post-3.jpeg";
 import img4 from "../images/post-4.jpeg";
 import img5 from "../images/post-5.jpeg";
-
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import {
   ButtonBack,
   // ButtonFirst,
@@ -46,8 +46,14 @@ const HeaderCarousel = () => {
             <Image src={img5} />
           </Slide>
         </Slider>
-        <ButtonBack className="buttonBack">back</ButtonBack>
-        <ButtonNext className="buttonNext">next</ButtonNext>
+        <ButtonBack className="buttonBack">
+          {" "}
+          <FaAngleLeft />
+        </ButtonBack>
+        <ButtonNext className="buttonNext">
+          {" "}
+          <FaAngleRight />
+        </ButtonNext>
       </div>
       <DotGroup className="dotGroup" />
     </CarouselProvider>

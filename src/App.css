@@ -672,6 +672,9 @@ footer {
   background: var(--primaryColor);
   color: var(--mainWhite);
 }
+.contact-div > div:hover span {
+  color: var(--mainBlack);
+}
 .contact-span {
   color: var(--primaryColor);
   text-transform: capitalize;
@@ -689,7 +692,7 @@ footer {
 
   .contact-div > div {
     font-size: 2rem;
-    border: 0.5rem solid var(--mainBlack);
+    border: 0.3rem solid var(--mainBlack);
     padding: 3rem 4rem;
     margin: 0 0 4rem 0;
     transition: all 0.3s linear;
@@ -699,6 +702,9 @@ footer {
     padding: 2rem 3rem;
     background: var(--primaryColor);
     color: var(--mainWhite);
+  }
+  .contact-div > div:hover span {
+    color: var(--mainBlack);
   }
   .contact-span {
     color: var(--primaryColor);
@@ -816,7 +822,7 @@ footer {
   padding: 1rem 2rem;
   display: inline-block;
   background: transparent;
-  border: solid 0.2rem var(--mainBlack);
+  border: solid 1.5px var(--mainBlack);
   text-decoration: none;
   color: var(--mainBlack);
   font-weight: bold;
@@ -1040,7 +1046,17 @@ footer {
 .home-post-container {
   padding: 2rem 2rem;
 }
-
+.home-post-title h3 {
+  text-transform: uppercase;
+  padding: 0 0 0.3rem 0;
+}
+.home-post-title small {
+  display: flex;
+  padding: 0 0 1rem 0;
+}
+.home-post-author {
+  padding-right: 1rem;
+}
 .home-post-container-center2 {
   display: grid;
   grid-template-rows: repeat(1fr);
@@ -1107,6 +1123,14 @@ footer {
   .home-post {
     margin: 0 0 2rem 0;
   }
+  .home-post-btn {
+    /* display: flex;
+    justify-content: flex-start; */
+    margin: 0.7rem 0 0 0;
+    /* padding: 0.8rem 0; */
+    width: 30%;
+    border: solid 1.2px var(--mainBlack);
+  }
 }
 /* end of home post */
 /* pagination */
@@ -1125,6 +1149,7 @@ footer {
 .pagination > li > a {
   border: solid 1px var(--mainBlack);
   padding: 0.5rem 1rem;
+  margin: 0 0.1rem;
   outline: none;
   cursor: pointer;
 }
@@ -1174,14 +1199,30 @@ footer {
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 8rem;
+  /* color: var(--primaryColor); */
 }
 .buttonNext {
   position: absolute;
   top: 50%;
-  left: 90%;
+  left: 85%;
   transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 8rem;
+  /* color: var(--primaryColor); */
 }
 .dotGroup {
   text-align: center;
 }
 /* end of pure react carousel */
+
+/* aside */
+.aside-about-btn {
+  width: 60%;
+  margin: 1rem 0 0 0;
+  border: solid 1.3px var(--mainBlack);
+}
+/* end of aside */

@@ -28,12 +28,14 @@ const HomePostContainer = () => {
                   <div className="md-description2">
                     <span>
                       <p>
-                        Maecenas luctus facilisis lacus, et aliquet arcu cursus
-                        vitae. Nulla dolor erat, iaculis in gravida quis,
-                        pellentesque sed tortor. Aliquam varius euismod orci
+                        Based in Nigeria, I am a seasoned front-end web
+                        developer, passionate about building excellent softwares
+                        that make a difference. I specialize...
                       </p>
                     </span>
-                    <Link to="/">read more</Link>
+                    <Link to="/about" className="btn aside-about-btn">
+                      read more
+                    </Link>
                   </div>
                 </div>
               </div>

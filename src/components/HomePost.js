@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { readableDate } from "../components/helpers";
+import { FaUser, FaCalendar, FaCalendarAlt } from "react-icons/fa";
 import MD from "react-markdown";
 const HomePost = props => {
   console.log(props);
@@ -19,15 +20,20 @@ const HomePost = props => {
             </div> */}
             <h3>{title}</h3>
             <small>
-              <strong>
-                {author} <span> {readableDate(date)}</span>
-              </strong>
+              <div className="home-post-author">
+                <FaUser /> {author}
+              </div>
+              <div className="home-post-author">
+                <FaCalendarAlt /> {readableDate(date)}
+              </div>
             </small>
             <div className="md-description">
               <span>
                 <MD source={description2} />
               </span>
-              <Link to="/">read more</Link>
+              <Link to={`/posts/${slug}`} className="btn home-post-btn">
+                read more
+              </Link>
             </div>
           </div>
         </div>

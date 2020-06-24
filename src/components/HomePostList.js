@@ -12,7 +12,6 @@ const HomePostList = () => {
         const { slice, posts, pageCount, handlePageClick } = value;
         console.log(slice, posts, pageCount, handlePageClick);
         return (
-          // <div>hello</div>
           <div className="home-post-list">
             {slice.map(item => {
               return (
