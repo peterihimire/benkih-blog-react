@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { readableDate } from "../components/helpers";
-import { FaUser, FaCalendar, FaCalendarAlt } from "react-icons/fa";
+import { FaUser, FaCalendarAlt } from "react-icons/fa";
 import MD from "react-markdown";
 const HomePost = props => {
   console.log(props);
