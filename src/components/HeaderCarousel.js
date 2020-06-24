@@ -23,8 +23,8 @@ const HeaderCarousel = () => {
       visibleSlides={1}
       totalSlides={5}
       step={1}
-      naturalSlideHeight={60}
       naturalSlideWidth={100}
+      naturalSlideHeight={60}
       hasMasterSpinner
       isPlaying={true}
     >
