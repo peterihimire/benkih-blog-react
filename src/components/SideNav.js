@@ -16,14 +16,15 @@ function SideNav() {
       />
       <div className={isOpen ? "menu show-menu" : "menu"}>
         <div className="menu-header">
+          <div>benkih</div>
           <span className="close-menu">
-            <button
+            {/* <button
               type="button"
               className="side-nav-btn"
               onClick={closeHandler}
             >
               <FaWindowClose className="side-nav-icon" />
-            </button>
+            </button> */}
           </span>
         </div>
         <div className="menu-nav">

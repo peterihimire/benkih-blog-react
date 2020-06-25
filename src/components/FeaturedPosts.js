@@ -14,7 +14,7 @@ const FeaturedPosts = () => {
 
   return (
     <section className="featured-posts">
-      {/* <Title title="featured post" /> */}
+      {/* <Title title="editors pick" /> */}
       <div className="featured-posts-center">
         {loading ? (
           <Loading />
