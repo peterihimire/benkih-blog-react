@@ -751,6 +751,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   padding: 0 0 2rem 0;
+  outline: none;
 }
 .side-nav-links a {
   text-decoration: none;
@@ -1201,7 +1202,7 @@ footer {
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 8rem;
+  font-size: 4rem;
   /* color: var(--primaryColor); */
 }
 .buttonNext {
@@ -1211,11 +1212,33 @@ footer {
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 8rem;
+  font-size: 4rem;
   /* color: var(--primaryColor); */
 }
 .dotGroup {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .buttonBack {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 8rem;
+    /* color: var(--primaryColor); */
+  }
+  .buttonNext {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 8rem;
+    /* color: var(--primaryColor); */
+  }
 }
 /* end of pure react carousel */
 
@@ -1226,3 +1249,49 @@ footer {
   border: solid 1.3px var(--mainBlack);
 }
 /* end of aside */
+.slider-img-container {
+  position: relative;
+}
+.banner2 {
+  background: rgba(255, 255, 255, 0.541);
+  color: var(--mainWhite);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 4rem;
+  position: absolute;
+  top: 30%;
+  left: 26%;
+  transform: scale(-50% -50%);
+  color: var(--mainBlack);
+  width: 50%;
+}
+.post-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 1.3rem;
+  text-decoration: none;
+  border: 1.5px solid var(--mainBlack);
+  color: var(--mainBlack);
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  background: none;
+  transition: all linear 1s;
+  position: absolute;
+  bottom: -6%;
+  left: 40%;
+}
+.post-btn2:hover {
+  cursor: pointer;
+  border: solid 1.5px var(--mainWhite);
+  background: var(--primaryColor);
+  transition: all linear 1s;
+}

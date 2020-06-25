@@ -1,10 +1,9 @@
 import React from "react";
-import img1 from "../images/post-1.jpeg";
-import img2 from "../images/post-2.jpeg";
-import img3 from "../images/post-3.jpeg";
-import img4 from "../images/post-4.jpeg";
-import img5 from "../images/post-5.jpeg";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import img1 from "../images/blog-header.jpg";
+
+import { FaAngleLeft, FaAngleRight, FaLink } from "react-icons/fa";
+import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
 import {
   ButtonBack,
   // ButtonFirst,
@@ -31,19 +30,69 @@ const HeaderCarousel = () => {
       <div className="container">
         <Slider className="slider">
           <Slide index={0}>
-            <Image src={img1} />
+            <div className="slide-img-container">
+              <Image src={img1} />
+              <Banner
+                name={<FaLink />}
+                title="best javascript framework of 2020"
+              >
+                <Link to="/posts" className="post-btn2">
+                  read more
+                </Link>
+              </Banner>
+            </div>
           </Slide>
           <Slide index={1}>
-            <Image src={img2} />
+            <div className="slide-img-container">
+              <Image src={img1} />
+              <Banner
+                name={<FaLink />}
+                title="my programming setup for productivity"
+              >
+                <Link to="/posts" className="post-btn2">
+                  read more
+                </Link>
+              </Banner>
+            </div>
           </Slide>
           <Slide index={2}>
-            <Image src={img3} />
+            <div className="slide-img-container">
+              <Image src={img1} />
+              <Banner
+                name={<FaLink />}
+                title="things to know in javascript before learning react framework"
+              >
+                <Link to="/posts" className="post-btn2">
+                  read more
+                </Link>
+              </Banner>
+            </div>
           </Slide>
           <Slide index={3}>
-            <Image src={img4} />
+            <div className="slide-img-container">
+              <Image src={img1} />
+              <Banner
+                name={<FaLink />}
+                title="best attire to make a good impression on a first date"
+              >
+                <Link to="/posts" className="post-btn2">
+                  read more
+                </Link>
+              </Banner>
+            </div>
           </Slide>
           <Slide index={4}>
-            <Image src={img5} />
+            <div className="slide-img-container">
+              <Image src={img1} />
+              <Banner
+                name={<FaLink />}
+                title="best career goals for a fresh graduate"
+              >
+                <Link to="/posts" className="post-btn2">
+                  read more
+                </Link>
+              </Banner>
+            </div>
           </Slide>
         </Slider>
         <ButtonBack className="buttonBack">
