@@ -65,6 +65,9 @@ body {
   text-transform: capitalize;
   font-size: 1.1rem;
 }
+.nav-logo small {
+  display: none;
+}
 .nav-logo img {
   width: 5rem;
   display: none;
@@ -195,6 +198,9 @@ body {
     display: flex;
     justify-content: center;
     padding: 0 0 0rem 0;
+  }
+  .nav-logo small {
+    display: block;
   }
   .nav-logo img {
     width: 7rem;
