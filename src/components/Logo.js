@@ -15,6 +15,9 @@ const Logo = () => {
           <Link to="/" className="peter-logo-1">
             {/* <img src={logo} alt="logo" /> */}benkih
           </Link>
+          <small>
+            your blog for everything programming, career, fashion...
+          </small>
         </div>
       </div>
     </div>
