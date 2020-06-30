@@ -1,11 +1,11 @@
 import React from "react";
-import img1 from "../images/blog-header.jpg";
+// import img1 from "../images/blog-header.jpg";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight, FaLink } from "react-icons/fa";
 import { PostConsumer } from "../context";
 
-import CarouselSlider from "../components/CarouselSlider";
+// import CarouselSlider from "../components/CarouselSlider";
 import {
   ButtonBack,
   // ButtonFirst,
@@ -20,22 +20,41 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 const HeaderCarousel = () => {
   return (
-    <CarouselProvider
-      visibleSlides={1}
-      totalSlides={5}
-      step={1}
-      naturalSlideWidth={100}
-      naturalSlideHeight={60}
-      hasMasterSpinner
-      isPlaying={true}
-    >
-      <div className="container">
-        <PostConsumer>
-          {value => {
-            console.log(value);
-          }}
-        </PostConsumer>
-        {/* <Slider className="slider">
+    <PostConsumer>
+      {value => {
+        console.log(value);
+        const { popularPosts } = value;
+        console.log(popularPosts);
+
+        return (
+          <CarouselProvider
+            visibleSlides={1}
+            totalSlides={5}
+            step={1}
+            naturalSlideWidth={100}
+            naturalSlideHeight={60}
+            hasMasterSpinner
+            isPlaying={true}
+          >
+            <div className="container">
+              <Slider className="slider">
+                {popularPosts.map(post => {
+                  return (
+                    <Slide index={post.id}>
+                      <div className="slide-img-container">
+                        <Image src={post.image} />
+                        <Banner name={<FaLink />} title={post.title}>
+                          <Link to="/posts" className="post-btn2">
+                            read more
+                          </Link>
+                        </Banner>
+                      </div>
+                    </Slide>
+                  );
+                })}
+              </Slider>
+
+              {/* <Slider className="slider">
           <Slide index={0}>
             <div className="slide-img-container">
               <Image src={img1} />
@@ -102,18 +121,20 @@ const HeaderCarousel = () => {
             </div>
           </Slide>
         </Slider> */}
-        {/* <CarouselSlider /> */}
-        <ButtonBack className="buttonBack">
-          {" "}
-          <FaAngleLeft />
-        </ButtonBack>
-        <ButtonNext className="buttonNext">
-          {" "}
-          <FaAngleRight />
-        </ButtonNext>
-      </div>
-      <DotGroup className="dotGroup" />
-    </CarouselProvider>
+              <ButtonBack className="buttonBack">
+                {" "}
+                <FaAngleLeft />
+              </ButtonBack>
+              <ButtonNext className="buttonNext">
+                {" "}
+                <FaAngleRight />
+              </ButtonNext>
+            </div>
+            <DotGroup className="dotGroup" />
+          </CarouselProvider>
+        );
+      }}
+    </PostConsumer>
   );
 };
 
