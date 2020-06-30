@@ -29,7 +29,7 @@ const HeaderCarousel = () => {
         return (
           <CarouselProvider
             visibleSlides={1}
-            totalSlides={5}
+            totalSlides={4}
             step={1}
             naturalSlideWidth={100}
             naturalSlideHeight={60}
@@ -44,7 +44,10 @@ const HeaderCarousel = () => {
                       <div className="slide-img-container">
                         <Image src={post.image} />
                         <Banner name={<FaLink />} title={post.title}>
-                          <Link to="/posts" className="post-btn2">
+                          <Link
+                            to={`/posts/${post.slug}`}
+                            className="post-btn2"
+                          >
                             read more
                           </Link>
                         </Banner>
