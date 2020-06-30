@@ -1,9 +1,11 @@
 import React from "react";
 import img1 from "../images/blog-header.jpg";
-
-import { FaAngleLeft, FaAngleRight, FaLink } from "react-icons/fa";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
+import { FaAngleLeft, FaAngleRight, FaLink } from "react-icons/fa";
+import { PostConsumer } from "../context";
+
+import CarouselSlider from "../components/CarouselSlider";
 import {
   ButtonBack,
   // ButtonFirst,
@@ -28,7 +30,12 @@ const HeaderCarousel = () => {
       isPlaying={true}
     >
       <div className="container">
-        <Slider className="slider">
+        <PostConsumer>
+          {value => {
+            console.log(value);
+          }}
+        </PostConsumer>
+        {/* <Slider className="slider">
           <Slide index={0}>
             <div className="slide-img-container">
               <Image src={img1} />
@@ -94,7 +101,8 @@ const HeaderCarousel = () => {
               </Banner>
             </div>
           </Slide>
-        </Slider>
+        </Slider> */}
+        {/* <CarouselSlider /> */}
         <ButtonBack className="buttonBack">
           {" "}
           <FaAngleLeft />

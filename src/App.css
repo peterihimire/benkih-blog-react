@@ -559,9 +559,11 @@ body {
 
 /* footer */
 footer {
-  background: none;
+  background: var(--mainWhite);
   color: var(--mainBlack);
   padding: 0 2rem;
+  /* border-top: solid 0.1rem var(--secondaryColor); */
+  box-shadow: 0 0 0.2rem 0 rgba(180, 177, 177, 0.849);
 }
 .footer-content {
   display: flex;
