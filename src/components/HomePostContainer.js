@@ -14,13 +14,15 @@ const HomePostContainer = () => {
         <aside className="sidebar-right">
           {/* <h5>This is aside container</h5> */}
           <article className="home-post2">
-            <h3>ABOUT ME</h3>
+            <div>
+              <h3>ABOUT ME</h3>
+            </div>
             <div className="home-post-center2">
               <div className="home-post-img-container2">
                 <img src={image} alt="post" style={{ width: "100%" }} />
               </div>
               <div className="home-post-text">
-                <div className="home-post-title">
+                <div className="home-post-title2">
                   {/* <small>
                     <strong>
                       peter ihimire <span> Oct 13, 2014</span>
@@ -48,26 +50,26 @@ const HomePostContainer = () => {
               const { popularPosts } = value;
               console.log(popularPosts);
               return (
-                <>
-                  <h3>POPULAR POST</h3>
-                  <div className="aside-popular-list">
-                    <div className="aside-popular-list-center">
-                      {popularPosts.map(item => {
-                        return (
-                          <article className="aside-popular-post" key={item.id}>
-                            <div className="aside-popular-post-center">
-                              <img src={item.image} alt="popular" />
-                              <div className="aside-popular-post-title">
-                                <p>{item.title}</p>
-                                <small>{item.date}</small>
-                              </div>
-                            </div>
-                          </article>
-                        );
-                      })}
-                    </div>
+                <div className="aside-popular-list">
+                  <div>
+                    <h3>POPULAR POST</h3>
                   </div>
-                </>
+                  <div className="aside-popular-list-center">
+                    {popularPosts.map(item => {
+                      return (
+                        <article className="aside-popular-post" key={item.id}>
+                          <div className="aside-popular-post-center">
+                            <img src={item.image} alt="popular" />
+                            <div className="aside-popular-post-title">
+                              <p>{item.title}</p>
+                              <small>{item.date}</small>
+                            </div>
+                          </div>
+                        </article>
+                      );
+                    })}
+                  </div>
+                </div>
               );
             }}
           </PostConsumer>

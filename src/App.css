@@ -1077,6 +1077,12 @@ footer {
 .home-post-container {
   padding: 2rem 2rem;
 }
+.home-post-title {
+  padding: 0 0 0 2rem;
+}
+.home-post-title2 {
+  padding: 0;
+}
 .home-post-title h3 {
   text-transform: uppercase;
   padding: 0 0 0.3rem 0;
@@ -1089,7 +1095,7 @@ footer {
   padding-right: 1rem;
 }
 .home-post-text {
-  padding: 0 0 0 2rem;
+  /* padding: 0 0 0 2rem; */
 }
 .home-post-container-center2 {
   display: grid;
@@ -1116,6 +1122,7 @@ footer {
 .home-post2 {
   width: 100%;
   margin: 0 0 2rem 0;
+  background: var(--mainWhite);
 }
 .home-post2 h3 {
   text-align: center;
@@ -1123,16 +1130,26 @@ footer {
 }
 .home-post {
   margin: 0 0 2rem 0;
+  background: var(--mainWhite);
+  padding: 2rem;
 }
 .home-post-center2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 2rem;
-  border: solid 1.5px var(--mainBlack);
+  /* grid-row-gap: 2rem;
+  grid-column-gap: 2rem; */
+  /* border: solid 1.5px var(--mainBlack); */
+}
+.home-post-btn {
+  /* display: flex;
+  justify-content: flex-start; */
+  margin: 0.7rem auto;
+  /* padding: 0.8rem 0; */
+  width: 30%;
+  border: solid 1.2px var(--mainBlack);
 }
 .md-description2 {
-  padding: 0 2rem 2rem 2rem;
+  padding: 1rem 0 0 0;
 }
 @media screen and (min-width: 768px) {
   .home-post-container-center {
@@ -1152,9 +1169,10 @@ footer {
   .home-post-center2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-row-gap: 2rem;
-    grid-column-gap: 2rem;
-    border: solid 1.5px var(--mainBlack);
+    padding: 2rem;
+    /* grid-row-gap: 2rem;
+    grid-column-gap: 2rem; */
+    /* border: solid 1.5px var(--mainBlack); */
   }
   .home-post2 {
     width: 90%;
@@ -1295,7 +1313,12 @@ footer {
 .aside-popular-post {
   margin: 1rem 0;
   width: 100%;
-  border: solid 1px var(--mainBlack);
+  /* border: solid 1px var(--mainBlack); */
+  background: var(--mainWhite);
+}
+.aside-popular-list {
+  background: var(--mainWhite);
+  width: 100%;
 }
 .aside-popular-list-center {
   display: flex;
@@ -1321,7 +1344,12 @@ footer {
   .aside-popular-post {
     margin: 1rem 0;
     width: 90%;
-    border: solid 1px var(--mainBlack);
+    /* border: solid 1px var(--mainBlack); */
+    background: var(--mainWhite);
+  }
+  .aside-popular-list {
+    background: var(--mainWhite);
+    width: 90%;
   }
 }
 /* end of aside */
