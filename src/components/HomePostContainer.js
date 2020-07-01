@@ -2,6 +2,7 @@ import React from "react";
 import HomePostList from "../components/HomePostList";
 import image from "../images/blog-header.jpg";
 import { Link } from "react-router-dom";
+import { PostConsumer } from "../context";
 
 const HomePostContainer = () => {
   return (
@@ -41,6 +42,35 @@ const HomePostContainer = () => {
               </div>
             </div>
           </article>
+          <PostConsumer>
+            {value => {
+              console.log(value);
+              const { popularPosts } = value;
+              console.log(popularPosts);
+              return (
+                <>
+                  <h3>POPULAR POST</h3>
+                  <div className="aside-popular-list">
+                    <div className="aside-popular-list-center">
+                      {popularPosts.map(item => {
+                        return (
+                          <article className="aside-popular-post" key={item.id}>
+                            <div className="aside-popular-post-center">
+                              <img src={item.image} alt="popular" />
+                              <div className="aside-popular-post-title">
+                                <p>{item.title}</p>
+                                <small>{item.date}</small>
+                              </div>
+                            </div>
+                          </article>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </>
+              );
+            }}
+          </PostConsumer>
         </aside>
       </div>
     </section>
