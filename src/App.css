@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  --primaryColor: #d69d00;
+  --primaryColor: #d49f00;
   --secondaryColor: #868e96;
   --mainWhite: #fff;
   --mainBlack: #444;
@@ -1124,10 +1124,10 @@ footer {
   margin: 0 0 2rem 0;
   background: var(--mainWhite);
 }
-.home-post2 h3 {
+/* .home-post2 h3 {
   text-align: center;
   padding: 1rem;
-}
+} */
 .home-post {
   margin: 0 0 2rem 0;
   background: var(--mainWhite);
@@ -1177,10 +1177,10 @@ footer {
   .home-post2 {
     width: 90%;
   }
-  .home-post2 h3 {
+  /* .home-post2 h3 {
     text-align: left;
     padding: 1rem 0;
-  }
+  } */
   .home-post {
     margin: 0 0 2rem 0;
     background: var(--mainWhite);
@@ -1305,10 +1305,17 @@ footer {
 /* end of pure react carousel */
 
 /* aside */
+.aside-title {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: solid 0.15rem var(--primaryColor);
+  text-transform: uppercase;
+  color: var(--primaryColor);
+}
 .aside-about-btn {
   width: 40%;
   margin: 1rem auto;
-  border: solid 1.3px var(--mainBlack);
+  border: solid 1.3px var(--primaryColor);
 }
 .aside-popular-post {
   margin: 1rem 0;
@@ -1323,6 +1330,7 @@ footer {
 .aside-popular-list-center {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
   /* width: 90%; */
 }
 .aside-popular-post-center {
@@ -1338,8 +1346,9 @@ footer {
 @media screen and (min-width: 768px) {
   .aside-about-btn {
     width: 60%;
-    margin: 1rem 0 0 0;
-    border: solid 1.3px var(--mainBlack);
+    margin: 1rem auto;
+    border: solid 1.3px var(--primaryColor);
+    color: var(--primaryColor);
   }
   .aside-popular-post {
     margin: 1rem 0;

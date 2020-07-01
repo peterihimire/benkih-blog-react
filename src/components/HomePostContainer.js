@@ -14,8 +14,8 @@ const HomePostContainer = () => {
         <aside className="sidebar-right">
           {/* <h5>This is aside container</h5> */}
           <article className="home-post2">
-            <div>
-              <h3>ABOUT ME</h3>
+            <div className="aside-title">
+              <h3>about me</h3>
             </div>
             <div className="home-post-center2">
               <div className="home-post-img-container2">
@@ -51,8 +51,8 @@ const HomePostContainer = () => {
               console.log(popularPosts);
               return (
                 <div className="aside-popular-list">
-                  <div>
-                    <h3>POPULAR POST</h3>
+                  <div className="aside-title">
+                    <h3>popular post</h3>
                   </div>
                   <div className="aside-popular-list-center">
                     {popularPosts.map(item => {
