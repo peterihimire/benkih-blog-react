@@ -117,8 +117,8 @@ const Footer = () => {
           </div>
           <div className="footer-copyright">
             <p>
-              BENKIH | Designed by Peter Ihimire | &copy; Copyright All right
-              reserved
+              BENKIH | Designed by: Peter Ihimire | &copy; Copyright All Rights
+              Reserved.
             </p>
           </div>
         </div>

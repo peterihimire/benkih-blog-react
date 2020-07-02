@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { FaAngleLeft, FaAngleRight, FaLink } from "react-icons/fa";
 import { PostConsumer } from "../context";
+import Loading from "../components/Loading";
 
 // import CarouselSlider from "../components/CarouselSlider";
 import {
@@ -23,7 +24,7 @@ const HeaderCarousel = () => {
     <PostConsumer>
       {value => {
         console.log(value);
-        const { popularPosts } = value;
+        const { popularPosts, loading } = value;
         console.log(popularPosts);
 
         return (
@@ -38,23 +39,27 @@ const HeaderCarousel = () => {
           >
             <div className="container">
               <Slider className="slider">
-                {popularPosts.map(post => {
-                  return (
-                    <Slide index={post.id}>
-                      <div className="slide-img-container">
-                        <Image src={post.image} />
-                        <Banner name={<FaLink />} title={post.title}>
-                          <Link
-                            to={`/posts/${post.slug}`}
-                            className="post-btn2"
-                          >
-                            read more
-                          </Link>
-                        </Banner>
-                      </div>
-                    </Slide>
-                  );
-                })}
+                {loading ? (
+                  <Loading />
+                ) : (
+                  popularPosts.map(post => {
+                    return (
+                      <Slide index={post.id}>
+                        <div className="slide-img-container">
+                          <Image src={post.image} />
+                          <Banner name={<FaLink />} title={post.title}>
+                            <Link
+                              to={`/posts/${post.slug}`}
+                              className="post-btn2"
+                            >
+                              read more
+                            </Link>
+                          </Banner>
+                        </div>
+                      </Slide>
+                    );
+                  })
+                )}
               </Slider>
 
               {/* <Slider className="slider">

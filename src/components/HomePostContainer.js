@@ -3,6 +3,9 @@ import HomePostList from "../components/HomePostList";
 import image from "../images/blog-header.jpg";
 import { Link } from "react-router-dom";
 import { PostConsumer } from "../context";
+import { readableDate } from "../components/helpers";
+import { FaCalendarAlt } from "react-icons/fa";
+import Loading from "../components/Loading";
 
 const HomePostContainer = () => {
   return (
@@ -47,27 +50,40 @@ const HomePostContainer = () => {
           <PostConsumer>
             {value => {
               console.log(value);
-              const { popularPosts } = value;
-              console.log(popularPosts);
+              const { popularPosts, loading } = value;
+              console.log(popularPosts, loading);
               return (
                 <div className="aside-popular-list">
                   <div className="aside-title">
                     <h3>popular post</h3>
                   </div>
                   <div className="aside-popular-list-center">
-                    {popularPosts.map(item => {
-                      return (
-                        <article className="aside-popular-post" key={item.id}>
-                          <div className="aside-popular-post-center">
-                            <img src={item.image} alt="popular" />
-                            <div className="aside-popular-post-title">
-                              <p>{item.title}</p>
-                              <small>{item.date}</small>
+                    {loading ? (
+                      <Loading />
+                    ) : (
+                      popularPosts.map(item => {
+                        return (
+                          <article className="aside-popular-post" key={item.id}>
+                            <div className="aside-popular-post-center">
+                              <Link to={`/post/${item.slug}`}>
+                                <img src={item.image} alt="popular" />
+                              </Link>
+
+                              <div className="aside-popular-post-title">
+                                <Link to={`/post/${item.slug}`}>
+                                  <p>{item.title}</p>
+                                </Link>
+
+                                <small>
+                                  <FaCalendarAlt />
+                                  <span>{readableDate(item.date)}</span>
+                                </small>
+                              </div>
                             </div>
-                          </div>
-                        </article>
-                      );
-                    })}
+                          </article>
+                        );
+                      })
+                    )}
                   </div>
                 </div>
               );
