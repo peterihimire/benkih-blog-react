@@ -65,12 +65,12 @@ const HomePostContainer = () => {
                         return (
                           <article className="aside-popular-post" key={item.id}>
                             <div className="aside-popular-post-center">
-                              <Link to={`/post/${item.slug}`}>
+                              <Link to={`/posts/${item.slug}`}>
                                 <img src={item.image} alt="popular" />
                               </Link>
 
                               <div className="aside-popular-post-title">
-                                <Link to={`/post/${item.slug}`}>
+                                <Link to={`/posts/${item.slug}`}>
                                   <p>{item.title}</p>
                                 </Link>
 
