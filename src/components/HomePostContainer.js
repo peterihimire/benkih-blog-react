@@ -6,6 +6,7 @@ import { PostConsumer } from "../context";
 import { readableDate } from "../components/helpers";
 import { FaCalendarAlt } from "react-icons/fa";
 import Loading from "../components/Loading";
+import Search from "../components/Search";
 
 const HomePostContainer = () => {
   return (
@@ -16,6 +17,7 @@ const HomePostContainer = () => {
         </article>
         <aside className="sidebar-right">
           {/* <h5>This is aside container</h5> */}
+          <Search />
           <article className="home-post2">
             <div className="aside-title">
               <h3>about me</h3>
