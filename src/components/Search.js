@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSearch } from "react-icons/fa";
 
 const Search = () => {
   return (
@@ -11,7 +12,9 @@ const Search = () => {
             id="search"
             placeholder="search..."
           />
-          <button className="btn search-btn">search</button>
+          <button className="btn search-btn">
+            <FaSearch />
+          </button>
         </div>
       </div>
     </div>
