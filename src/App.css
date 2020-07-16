@@ -815,11 +815,15 @@ footer {
 
 /* single featured */
 .single-featured {
-  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5); */
+  border: solid 0.2rem var(--mainWhite);
 }
 .img-container {
   position: relative;
   transition: all 0.5s linear;
+  overflow: hidden;
+  /* transform: translateY(0); */
+  transform: scale(0.9);
 }
 
 .img-container img {
@@ -827,41 +831,62 @@ footer {
   display: block;
   transition: all 0.5s linear;
 }
-.img-container:hover {
-  background: rgba(0, 0, 0, 0.3);
+.img-container:hover .single-featured-hovered-div {
+  /* background: rgba(0, 0, 0, 0.3); */
+  transform: translateY(-90%);
 }
 
 .img-container:hover img {
   opacity: 0.1;
 }
-.featured-link {
+.single-featured-hovered-div {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  /* transform: scale(0); */
-  transform: translate(-50%, -50%) scale(1);
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  /* transform: scale(0.9); */
+  padding: 4rem;
+  bottom: -90%;
+  height: 100%;
+  transform: translateY(11%);
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+}
+.single-featured-hovered-div h3 {
+  padding: 0 0 2rem 0;
+  text-transform: uppercase;
+}
+
+.featured-btn-div {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.single-featured-hovered-div .featured-link {
   transition: all 0.5s linear;
 }
 .featured-link:hover {
   transition: all 0.5s linear;
 }
 .img-container:hover .featured-link {
-  /* transform: translate(-50%, -50%) scale(1); */
   transition: all 0.5s linear;
 }
 .featured-btn {
   padding: 1rem 2rem;
-  display: inline-block;
+  width: 50%;
+  margin: 1rem auto 0 auto;
+  text-align: center;
   background: transparent;
-  border: solid 1.5px var(--mainBlack);
+  border: solid 1.5px var(--mainWhite);
   text-decoration: none;
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   font-weight: bold;
   text-transform: uppercase;
 }
 .featured-btn:hover {
   transition: all 0.5s linear;
   background: var(--mainGrey);
+  color: var(--primaryColor);
 }
 .featured-posts {
   padding: 5rem 2rem;

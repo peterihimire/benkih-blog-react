@@ -24,12 +24,19 @@ const FeaturedPosts = () => {
               <article key={featuredPost.id} className="single-featured">
                 <div className="img-container">
                   <img src={featuredPost.image} alt="background-featured" />
-                  <Link
-                    to={`/posts/${featuredPost.slug}`}
-                    className="featured-link featured-btn"
-                  >
-                    read
-                  </Link>
+
+                  <div className="single-featured-hovered-div">
+                    <h3>{featuredPost.title}</h3>
+                    <p>{featuredPost.description}</p>
+                    {/* <div className="featured-btn-div"> */}
+                    <Link
+                      to={`/posts/${featuredPost.slug}`}
+                      className="featured-link featured-btn"
+                    >
+                      read
+                    </Link>
+                    {/* </div> */}
+                  </div>
                 </div>
               </article>
             );
