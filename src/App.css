@@ -1363,6 +1363,7 @@ footer {
 .aside-popular-list {
   background: var(--mainWhite);
   width: 100%;
+  margin: 0 0 2rem 0;
 }
 .aside-popular-list-center {
   display: flex;
@@ -1540,3 +1541,28 @@ footer {
   color: var(--mainGrey);
 }
 /* end of search */
+
+/* newsletter */
+.newsletter {
+  background: var(--mainWhite);
+  margin: 0 0 2rem 0;
+}
+.newsletter form {
+  padding: 2rem;
+}
+.newsletter input {
+  padding: 1.5rem 1rem;
+  border: solid 0.1rem var(--mainGrey);
+  width: 100%;
+}
+.newsletter-btn {
+  width: 100%;
+  padding: 1.5rem 0;
+  border: none;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  font-weight: bolder;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+/* end of newsletter */

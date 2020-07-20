@@ -7,6 +7,7 @@ import { readableDate } from "../components/helpers";
 import { FaCalendarAlt } from "react-icons/fa";
 import Loading from "../components/Loading";
 import Search from "../components/Search";
+import Newsletter from "./Newsletter";
 
 const HomePostContainer = () => {
   return (
@@ -91,6 +92,7 @@ const HomePostContainer = () => {
               );
             }}
           </PostConsumer>
+          <Newsletter />
         </aside>
       </div>
     </section>
