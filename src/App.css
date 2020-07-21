@@ -95,7 +95,13 @@ body {
   background: none;
   color: var(--primaryColor);
 }
-
+.search-icon {
+  font-size: 2.5rem;
+  color: var(--primaryColor);
+}
+.search-icon2 {
+  display: none;
+}
 .nav-btn-logo {
   display: flex;
   justify-content: space-between;
@@ -126,16 +132,23 @@ body {
   color: var(--primaryColor) !important;
   font-weight: bold;
 }
+.pete-logo {
+  display: none;
+}
 
+.pete-logo-fixed {
+  display: none;
+}
 @media screen and (min-width: 768px) {
   .navbar {
     position: sticky;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
     background: rgba(255, 255, 255, 0.856);
     box-shadow: 0 0 0.2rem 0 rgba(173, 172, 172, 0.849);
     margin: 0 0 2rem 0;
     visibility: visible;
+    /* display: flex; */
   }
 
   .navbar-hidden {
@@ -160,6 +173,12 @@ body {
     max-width: 1170px;
     margin: 0 auto;
   }
+  .nav-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
   .nav-header-f {
     display: flex;
     justify-content: space-between;
@@ -170,6 +189,14 @@ body {
   }
   .nav-btn {
     display: none;
+  }
+  .search-icon {
+    display: none;
+  }
+  .search-icon2 {
+    display: inline-block;
+    color: var(--primaryColor);
+    font-size: 1.8rem;
   }
   .image2 {
     width: 5rem;
@@ -193,6 +220,9 @@ body {
   }
   .navbar-logo {
     padding: 3rem 0;
+  }
+  .nav-btn-logo {
+    display: none;
   }
   .nav-logo {
     display: flex;
@@ -226,6 +256,24 @@ body {
   }
   .peter-logo-2 {
     display: none;
+  }
+  .pete-logo {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    font-weight: bolder;
+    visibility: hidden;
+  }
+  .pete-logo-fixed {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--primaryColor);
+    font-weight: bolder;
+    visibility: visible;
   }
 }
 /* end of navbar */
@@ -1165,6 +1213,7 @@ footer {
 .home-post-center2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 2rem;
 }
 .home-post-btn {
   /* display: flex;
