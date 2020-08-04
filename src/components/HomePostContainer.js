@@ -1,6 +1,6 @@
 import React from "react";
 import HomePostList from "../components/HomePostList";
-import image from "../images/blog-header.jpg";
+import image from "../images/about-pix.jpg";
 import { Link } from "react-router-dom";
 import { PostConsumer } from "../context";
 import { readableDate } from "../components/helpers";

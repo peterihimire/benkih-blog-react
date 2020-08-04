@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 // import items from "./data";
 import Client from "./Contentful";
-import img from "./images/blog-header.jpg";
+import img1 from "./images/blog-header.jpg";
+import img2 from "./images/pexels-1.jpg";
+import img3 from "./images/pexels-2.jpg";
+import img4 from "./images/pexels-3.jpg";
 
 Client.getEntries({
   content_type: "portfolioBlog"
@@ -18,19 +21,19 @@ class PostProvider extends Component {
     categories: [
       {
         title: "programming",
-        image: img
+        image: img1
       },
       {
         title: "fashion",
-        image: img
+        image: img2
       },
       {
         title: "career",
-        image: img
+        image: img3
       },
       {
         title: "technology",
-        image: img
+        image: img4
       }
     ],
     offset: 0,

@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-  --primaryColor: #d49f00;
+  --primaryColor: #66beb0;
   --secondaryColor: #b7babd;
   --uniColor: #7a7a7a;
   --mainWhite: #fff;
@@ -82,7 +82,7 @@ body {
 .peter-logo-2 {
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--mainBlack);
+  color: var(--primaryColor);
   font-size: 2.5rem;
   font-weight: bolder;
   letter-spacing: var(--mainSpacing);
@@ -94,14 +94,14 @@ body {
   width: 4rem;
 }
 .nav-btn {
-  font-size: 3rem;
+  font-size: 2rem;
   border: none;
   background: none;
-  color: var(--primaryColor);
+  color: var(--mainBlack);
 }
 .search-icon {
-  font-size: 2.5rem;
-  color: var(--primaryColor);
+  font-size: 1.8rem;
+  color: var(--mainBlack);
 }
 .search-icon2 {
   display: none;
@@ -199,7 +199,7 @@ body {
   }
   .search-icon2 {
     display: inline-block;
-    color: var(--primaryColor);
+    color: var(--mainBlack);
     font-size: 1.8rem;
   }
   .image2 {
@@ -611,7 +611,7 @@ body {
 
 /* footer */
 footer {
-  background: var(--secondaryColor);
+  /* background: var(--uniColor); */
   color: var(--mainBlack);
   padding: 0 2rem;
   box-shadow: var(--main-shadow);
@@ -641,21 +641,24 @@ footer {
   font-size: 1.2rem;
 }
 .follow-icon-container-1 {
-  background: var(--mainGrey);
+  background: var(--mainWhite);
   padding: 1.2rem 1.2rem 0.7rem 1.2rem;
-  border-radius: 0.1rem;
+  border-radius: 0.1rem 1rem 0.1rem 0.1rem;
+  box-shadow: var(--main-shadow);
   font-size: 1.5rem;
 }
 .follow-icon-container-2 {
-  background: var(--mainGrey);
+  background: var(--mainWhite);
   padding: 1.2rem 1.2rem 0.7rem 1.2rem;
-  border-radius: 0.1rem;
+  border-radius: 0.1rem 1rem 0.1rem 0.1rem;
+  box-shadow: var(--main-shadow);
   font-size: 1.5rem;
 }
 .follow-icon-container-3 {
-  background: var(--mainGrey);
+  background: var(--mainWhite);
   padding: 1.2rem 1.2rem 0.7rem 1.2rem;
-  border-radius: 0.1rem;
+  border-radius: 0.1rem 1rem 0.1rem 0.1rem;
+  box-shadow: var(--main-shadow);
   font-size: 1.5rem;
 }
 .footer-copyright {
@@ -687,7 +690,7 @@ footer {
   border: solid 0.2rem var(--primaryColor);
   position: relative;
   width: 270px;
-  height: 362px;
+  height: 273px;
   top: 20px;
   margin: 0 0 2rem 0;
 }
@@ -945,7 +948,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-row-gap: 2rem;
-  grid-column-gap: 40px;
+  grid-column-gap: 20px;
   margin: 0 auto;
   max-width: 1170px;
 }
@@ -1479,6 +1482,7 @@ footer {
   position: absolute;
   top: 20%;
   left: 26%;
+
   /* transform: scale(-50% -50%); */
   color: var(--mainBlack);
   width: 50%;
@@ -1492,14 +1496,14 @@ footer {
   align-items: center;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  border: 1.2px solid var(--mainBlack);
+  border: 1.2px solid var(--secondaryColor);
   color: var(--mainWhite);
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
-  background: var(--mainBlack);
+  background: var(--primaryColor);
   transition: all linear 1s;
   position: absolute;
   bottom: -9%;
@@ -1507,9 +1511,10 @@ footer {
 }
 .post-btn2:hover {
   cursor: pointer;
-  border: solid 1.5px var(--mainWhite);
-  color: var(--mainBlack);
-  background: none;
+  border: solid 1.5px var(--secondaryColor);
+  color: var(--primaryColor);
+
+  background: var(--mainWhite);
   transition: all linear 1s;
 }
 
@@ -1528,6 +1533,7 @@ footer {
     position: absolute;
     top: 30%;
     left: 26%;
+    margin: auto;
     transform: scale(-50% -50%);
     color: var(--mainBlack);
     width: 50%;
@@ -1541,14 +1547,14 @@ footer {
     align-items: center;
     padding: 0.8rem 1.3rem;
     text-decoration: none;
-    border: 1.5px solid var(--mainBlack);
+    border: 1.5px solid var(--secondaryColor);
     color: var(--mainWhite);
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1rem;
     letter-spacing: 0.1rem;
-    background: var(--mainBlack);
+    background: var(--primaryColor);
     transition: all linear 1s;
     position: absolute;
     bottom: -6%;
@@ -1557,9 +1563,9 @@ footer {
 
   .post-btn2:hover {
     cursor: pointer;
-    border: solid 1.5px var(--mainBlack);
-    color: var(--mainBlack);
-    background: none;
+    border: solid 1.5px var(--secondaryColor);
+    color: var(--primaryColor);
+    background: var(--mainWhite);
     transition: all linear 1s;
   }
 }
